@@ -1,0 +1,111 @@
+/* Login Page Styles */
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--sp-4);
+    background: var(--clr-dark-navy);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background: var(--clr-white);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--br-xl);
+    padding: var(--sp-10);
+    box-shadow: var(--shadow-2xl);
+    position: relative;
+    z-index: 10;
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: var(--sp-12);
+}
+
+.login-logo {
+    font-size: 3rem;
+    margin-bottom: var(--sp-4);
+    color: var(--clr-primary);
+}
+
+.login-title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--clr-text-dark);
+    margin-bottom: var(--sp-2);
+}
+
+.login-subtitle {
+    font-size: var(--fs-sm);
+    color: var(--clr-text-muted);
+    margin-bottom: 0;
+}
+
+/* Form */
+.login-form {
+    margin-bottom: var(--sp-8);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--sp-6);
+    font-size: var(--fs-sm);
+}
+
+.login-forgot {
+    color: var(--clr-primary);
+    font-weight: var(--fw-medium);
+}
+
+.login-forgot:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.login-footer {
+    text-align: center;
+    padding-top: var(--sp-6);
+    border-top: 1px solid var(--clr-border);
+}
+
+.login-footer p {
+    font-size: var(--fs-xs);
+    color: var(--clr-text-muted);
+    margin: 0;
+}
+
+/* Decorative background elements */
+.login-bg-accent {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+    top: -200px;
+    left: -200px;
+    pointer-events: none;
+}
+
+.login-bg-accent-2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
+    bottom: -100px;
+    right: -100px;
+    pointer-events: none;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: var(--sp-6);
+    }
+}
